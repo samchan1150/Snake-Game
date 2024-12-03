@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; /* Black background */
+    margin: 0;
+}
+
+/* Center the game container */
+#game-container {
+    position: relative;
+    width: 400px; /* Canvas width */
+    height: 400px; /* Canvas height */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Style and position the start button */
+#startButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;    /* White frame */
+    background-color: transparent; /* Transparent background */
+    color: white;               /* White text */
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#gameCanvas {
+    background-color: #000; /* Black background */
+    border: 2px solid orange; /* Orange frame */
+    display: block;
+}
+
+/* Hide the button when the 'hidden' class is applied */
+#startButton.hidden {
+    display: none;
+}
