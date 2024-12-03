@@ -7,12 +7,45 @@ body {
     margin: 0;
 }
 
+/* Wrapper to hold the game and score side by side */
+#game-wrapper {
+    display: flex;
+    justify-content: center;      /* Center horizontally */
+    align-items: flex-start;      /* Align to the top */
+    margin: 0 auto;               /* Center the wrapper */
+}
+
+/* Center the game title */
+#game-title {
+    text-align: center;
+    color: white; /* Set the text color to match your game theme */
+    margin-top: 20px; /* Optional: add space above the heading */
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
 /* Center the game container */
 #game-container {
     position: relative;
     width: 400px; /* Canvas width */
     height: 400px; /* Canvas height */
     margin: 0 auto; /* Center the container horizontally */
+    margin-right: 20px; /* Add space to the right of the container */
+}
+
+/* Style the score container */
+#score-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Style the score text */
+#score {
+    color: white;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    margin: 0;                    /* Remove default margin */
 }
 
 /* Style and position the start button */
